@@ -19,6 +19,10 @@ Route::get('/dashboard', function () {
     return view('back.index');
 });
 
+Route::get('/login', 'LoginController@index')->name('login');
+Route::post('/login_post', 'LoginController@login_post')->name('login_post');
+Route::get('/logout', 'LoginController@logout')->name('logout');
+
 Route::get('/tab_masyarakat', 'MasyarakatController@index');
 
 Route::get('/tab_petugas', 'PetugasController@index');

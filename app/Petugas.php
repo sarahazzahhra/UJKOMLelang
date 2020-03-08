@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pegawai extends Model
+class Petugas extends Model
 {
     protected $table = 'tb_petugas_srh';
 
